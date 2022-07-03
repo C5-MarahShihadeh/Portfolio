@@ -1,9 +1,6 @@
 import React from 'react';
 import IMG1 from '../../assets/beautyRecipe.png';
-import IMG4 from '../../assets/fake.png';
-
-
-
+import IMG4 from '../../assets/bigBite.png';
 import './portfolio.css';
 
 const Portfolio = () => {
@@ -32,15 +29,15 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {soloProjects.map((pro) => (
-          <article className="portfolio__item" key={pro.id}>
+        {soloProjects.map((element) => (
+          <article className="portfolio__item" key={element.id}>
           <div className="portfolio__item-image">
-            <img src={pro.img} alt={pro.title} />
+            <img src={element.img} alt={element.title} />
           </div>
-          <h3>{pro.title}</h3>
-          <p className='brief'>{pro.brief}</p>
+          <h3>{element.title}</h3>
+          <p className='brief'>{element.brief}</p>
           <div className="portfolio__item-cta">
-            <a href={pro.link} className="btn btn-primary">Live Demo</a>
+            <a href={element.link} className="btn btn-primary">Live Demo</a>
           </div>
         </article>
         ))}   
