@@ -18,11 +18,11 @@
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
-}
-.my-photo{
-    width: 25rem;
+      width: 25rem;
     height: 25rem;
 }
+
+  
 .about__me-image:hover {
     transform: rotate(0);
 }
@@ -89,7 +89,11 @@
         width: 65%;
         margin: 0rem auto 3rem; 
     }
-
+    .about__me-image {
+      
+          width: 10rem;
+        height: 10rem;
+    }
     .about__cards {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;

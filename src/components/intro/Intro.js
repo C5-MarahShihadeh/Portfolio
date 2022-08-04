@@ -10,7 +10,7 @@ const Intro = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img className='my-photo' src={ME} alt="me" />
+            <img   src={ME} alt="me" />
           </div>
         </div>
         <div className="about__content">
